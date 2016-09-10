@@ -38,7 +38,13 @@ endwhile;
 
 $mysql->close();
 ?>
-
+<!-- delete listing from db BEGIN -->
+<div>
+<form id="form" name="form" action="/handler_delad.php" method="POST">
+<input type="submit" name="Delete" value="Delete" />
+</form>
+</div>
+<!-- delete listing from db END -->
 
 </body>
 </html>
