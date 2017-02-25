@@ -5,13 +5,13 @@ As per avaialble regions, it's designed for New Zealand.
 It has very basic functionality and at the moment not secure at all. The code will be updated while learning more features and functionality of PHP.
 Any suggestions are welcome.
 
-Files and their description:
-dbconnect.php		// contains DB name, user and password. It's called from other files.
-getDistricts.php	// gets district according to chosen region from DB
-handler_addad.php	// when adding listing, it calls to execute this handler
-handler_delad.php	// this handler supposed to delete listing from DB
-index.php		// main page with list of ads
-listing.php		// page with listing content
+<br />Files and their description:
+<br />dbconnect.php		// contains DB name, user and password. It's called from other files.
+<br />getDistricts.php	// gets district according to chosen region from DB
+<br />handler_addad.php	// when adding listing, it calls to execute this handler
+<br />handler_delad.php	// this handler supposed to delete listing from DB
+<br />index.php		// main page with list of ads
+<br />listing.php		// page with listing content
 
 MySQL Database currently has the following layout:
 
