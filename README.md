@@ -16,34 +16,34 @@ Any suggestions are welcome.
 MySQL Database currently has the following layout:
 
 mysql> describe regions;
-+-------------+--------------+------+-----+---------+-------+
-| Field       | Type         | Null | Key | Default | Extra |
-+-------------+--------------+------+-----+---------+-------+
-| region_id   | int(11)      | NO   | PRI | NULL    |       |
-| region_name | varchar(255) | NO   |     | NULL    |       |
-+-------------+--------------+------+-----+---------+-------+
-2 rows in set (0.00 sec)
-mysql> describe districts;
-+---------------+--------------+------+-----+---------+----------------+
-| Field         | Type         | Null | Key | Default | Extra          |
-+---------------+--------------+------+-----+---------+----------------+
-| district_id   | int(11)      | NO   | PRI | NULL    | auto_increment |
-| region_id     | int(11)      | NO   | MUL | NULL    |                |
-| district_name | varchar(255) | NO   |     | NULL    |                |
-+---------------+--------------+------+-----+---------+----------------+
-3 rows in set (0.00 sec)
+<br />+-------------+--------------+------+-----+---------+-------+
+<br />| Field       | Type         | Null | Key | Default | Extra |
+<br />+-------------+--------------+------+-----+---------+-------+
+<br />| region_id   | int(11)      | NO   | PRI | NULL    |       |
+<br />| region_name | varchar(255) | NO   |     | NULL    |       |
+<br />+-------------+--------------+------+-----+---------+-------+
+<br />2 rows in set (0.00 sec)
+<br />mysql> describe districts;
+<br />+---------------+--------------+------+-----+---------+----------------+
+<br />| Field         | Type         | Null | Key | Default | Extra          |
+<br />+---------------+--------------+------+-----+---------+----------------+
+<br />| district_id   | int(11)      | NO   | PRI | NULL    | auto_increment |
+<br />| region_id     | int(11)      | NO   | MUL | NULL    |                |
+<br />| district_name | varchar(255) | NO   |     | NULL    |                |
+<br />+---------------+--------------+------+-----+---------+----------------+
+<br />3 rows in set (0.00 sec)
 
 mysql> describe listings;
-+----------------+------------------------+------+-----+---------+----------------+
-| Field          | Type                   | Null | Key | Default | Extra          |
-+----------------+------------------------+------+-----+---------+----------------+
-| listing_id     | int(11)                | NO   | PRI | NULL    | auto_increment |
-| listing_uniqid | varchar(255)           | YES  |     | NULL    |                |
-| user_email     | varchar(255)           | YES  |     | NULL    |                |
-| listing_title  | varchar(255)           | YES  |     | NULL    |                |
-| listing_body   | text                   | YES  |     | NULL    |                |
-| listing_price  | decimal(10,2) unsigned | YES  |     | NULL    |                |
-| district_id    | int(11)                | YES  |     | NULL    |                |
-+----------------+------------------------+------+-----+---------+----------------+
-7 rows in set (0.01 sec)
+<br />+----------------+------------------------+------+-----+---------+----------------+
+<br />| Field          | Type                   | Null | Key | Default | Extra          |
+<br />+----------------+------------------------+------+-----+---------+----------------+
+<br />| listing_id     | int(11)                | NO   | PRI | NULL    | auto_increment |
+<br />| listing_uniqid | varchar(255)           | YES  |     | NULL    |                |
+<br />| user_email     | varchar(255)           | YES  |     | NULL    |                |
+<br />| listing_title  | varchar(255)           | YES  |     | NULL    |                |
+<br />| listing_body   | text                   | YES  |     | NULL    |                |
+<br />| listing_price  | decimal(10,2) unsigned | YES  |     | NULL    |                |
+<br />| district_id    | int(11)                | YES  |     | NULL    |                |
+<br />+----------------+------------------------+------+-----+---------+----------------+
+<br />7 rows in set (0.01 sec)
 
